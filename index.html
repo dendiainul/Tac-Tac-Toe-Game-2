@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Tic Tac Toe Game</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!--Navbar-->
+    <ul>
+        <li><a target="_blank" href="https://www.behance.net/gallery/73327337/Tic-Tac-Toe-Game-Mockup">Mockup</a></li>
+        <li><a target="_blank" href="https://adobe.ly/2Edfnlh">Flowchart</a></li>
+        <li><a target="_blank" href="https://xd.adobe.com/view/a22aa503-0a7e-4704-53ff-29ee02e632d1-d41b/">Prototype</a></li>
+        <li><a target="_blank" href="https://github.com/dendiainul/Tac-Tac-Toe-Game-2">GitHub</a></li>
+      </ul>
+<!--End Navbar-->
+<!--Main Content-->
+  <!-- Scoreboart-->
+  <table id="scoreboard" align="center">
+    <!--Title-->
+    <h2 class="title">Tic <span class="span">Tac</span> Toe</h2>
+    <!--End Title-->
+    <tr>
+    <td class="palyer1"> Player 1 </td>
+    <td width="30"> &nbsp; </td>
+    <td class="player2"> Player 2 </td>
+  </tr>
+  <tr>
+    <td class="score" id="player1">
+      0 
+    </td>
+    <td> &nbsp; </td>
+    <td class="score" id="player2">
+      0 
+    </td>
+  </tr>
+  <!--End Player Score-->
+</table>
+<!-- End Scoreboart-->
+<div id="placeholder"></div>
+<button class="button" style="vertical-align:middle" onclick="restart()">
+  <span>Reset</span>
+</button>
+<select class="select" onchange="restart(this.value)">
+  <option value="2">
+    2 X 2
+  </option>
+  <option value="3" selected="">
+    3 X 3
+  </option>
+  <option value="4">
+    4 X 4
+  </option>
+  <option value="5">
+    5 X 5
+  </option>
+  <option value="6">
+    6 X 6
+  </option>
+</select>
+<!--End Main Content-->
+<script  src="js/index.js"></script>
+</body>
+</html>
